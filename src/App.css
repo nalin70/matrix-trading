@@ -1,10 +1,10 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .App-logo {
+  @apply pointer-events-none;
   height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +14,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  @apply bg-gray-900 min-h-screen flex flex-col items-center justify-center text-white;
 }
 
 .App-link {
-  color: #61dafb;
+  @apply text-blue-400 hover:text-blue-600 transition-colors duration-300;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +28,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Additional styles for a more stylish look */
+body {
+  @apply bg-gray-100;
+}
+
+.container {
+  @apply mx-auto p-4;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-lg;
+}
+
+.button-primary {
+  @apply bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300;
+}
+
+.input-field {
+  @apply border border-gray-300 p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
 }

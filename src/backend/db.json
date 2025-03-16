@@ -1,0 +1,14 @@
+{
+  "customers": [
+    {
+      "id": "e094",
+      "name": "abc",
+      "email": "abc@cba.com"
+    },
+    {
+      "id": "b360",
+      "name": "xyz",
+      "email": "xyz@zyx.com"
+    }
+  ]
+}
