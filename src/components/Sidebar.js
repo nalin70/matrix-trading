@@ -1,4 +1,3 @@
-// filepath: c:\Users\dewan\Desktop\New folder\my-app\src\components\Sidebar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
